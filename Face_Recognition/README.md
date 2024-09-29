@@ -1,47 +1,67 @@
-<!--Please do not remove this part-->
-![Star Badge](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99)
-![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
+# Real-time Face, Eye, and Body Detection
 
-# Script Title
+This project implements real-time face, eye, and body detection using OpenCV. The application captures video from a webcam and processes the frames to detect and display bounding boxes around detected faces, eyes, and bodies.
 
-![OpenCV](https://user-images.githubusercontent.com/87910771/150637975-dda7d408-60e6-4c9e-aa71-10196c51ec72.jpg)
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
+## Features
+- Detects faces in real-time using Haar cascades.
+- Detects eyes within the face region.
+- Detects full bodies using HOG-based human detector.
+- Displays bounding boxes and labels for detected faces, eyes, and bodies.
+- Command-line options to enable or disable face and body detection.
 
-<!--An image is an illustration for your project, the tip here is using your sense of humour as much as you can :D 
+## Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ndleah/python-mini-project.git
+   cd python-mini-project/Face_Recognition
+   ```
 
-You can copy paste my markdown photo insert as following:
-<p align="center">
-<img src="your-source-is-here" width=40% height=40%>
--->
+2. **Install the required packages**:
+   Make sure you have Python installed and then install OpenCV:
+   ```bash
+   pip install opencv-python
+   ```
 
-## 🛠️ Description
-<!--Remove the below lines and add yours -->
-This is A Face Recognition Project developed using OpenCV Module in Python.
-This Display a Blue Reactangle Frame around Faces.
+## Usage
+Run the script with the following commands:
 
-## ⚙️ Languages or Frameworks Used
-<!--Remove the below lines and add yours -->
-Open Command Prompt and use the following command to install the required modules:
+- For face and eye detection:
+  ```bash
+  python your_script_name.py --face
+  ```
 
-```sh 
-pip install opencv-python
-```
+- For body detection:
+  ```bash
+  python your_script_name.py --body
+  ```
 
+Press `q` to exit the video stream.
 
-## 🌟 How to run
-<!--Remove the below lines and add yours -->
-Just open a terminal in the folder where your script is located and run the following command:
+## Contributing
+Contributions are welcome! If you have suggestions or improvements, feel free to create a pull request.
 
-```sh
-python main.py
-```
+### Steps to Contribute
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b your-feature-branch
+   ```
 
-## 📺 Demo
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Your descriptive commit message"
+   ```
 
-![demoimage](https://user-images.githubusercontent.com/87910771/150638214-207dbfea-1feb-4a71-8e55-56ba9dd04094.jpg)
+4. Push to your branch:
+   ```bash
+   git push origin your-feature-branch
+   ```
 
-Image Only for Demonstration Purpose.
-
-## 🤖 Author
-<!--Remove the below lines and add yours -->
-[AnishLohiya](https://github.com/AnishLohiya)
+5. Open a pull request.
